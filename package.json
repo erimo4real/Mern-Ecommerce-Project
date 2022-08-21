@@ -1,0 +1,19 @@
+{
+  "name": "my-ecomm",
+  "version": "1.0.0",
+  "description": "just a small sample ecomm app ",
+  "main": "server.js ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erimo4real/Mern-Ecommerce-Project.git"
+  },
+  "author": "erimo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erimo4real/Mern-Ecommerce-Project/issues"
+  },
+  "homepage": "https://github.com/erimo4real/Mern-Ecommerce-Project#readme"
+}
