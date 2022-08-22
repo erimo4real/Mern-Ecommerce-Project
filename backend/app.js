@@ -18,6 +18,12 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
 
+// Route Imports
+const user = require("./routes/userRoute");
+
+// Main Routes
+app.use("/api/v1", user);
+
 
 // Middleware for Errors
 app.use(errorMiddleware);
