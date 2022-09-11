@@ -25,6 +25,11 @@ const user = require("./routes/userRoute");
 app.use("/api/v1", user);
 
 
+ app.get("/", (req, res) => {
+   res.send("Hello World!");
+ });
+
+
 // Middleware for Errors
 app.use(errorMiddleware);
 
