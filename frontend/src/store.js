@@ -12,14 +12,52 @@ import {
 
 import { cartReducer } from "./reducers/cartReducer";
 
+import {
+  allOrdersReducer,
+  myOrdersReducer,
+  newOrderReducer,
+  orderDetailsReducer,
+  orderReducer,
+} from "./reducers/orderReducer";
+
+import {
+  newProductReducer,
+  newReviewReducer,
+  productDetailsReducer,
+  productReducer,
+  productReviewsReducer,
+  productsReducer,
+  reviewReducer,
+} from "./reducers/productReducer";
+
 const reducer = combineReducers({
+  // user //////
   user: userReducer,
   profile: profileReducer,
   forgotPassword: forgotPasswordReducer,
   allUsers: allUsersReducer,
   userDetails: userDetailsReducer,
+
+  /// Cart ///
   cart: cartReducer,
+
+  /// order ////
+  allOrders: allOrdersReducer,
+  order: orderReducer,
+  newOrder: newOrderReducer,
+  myOrders: myOrdersReducer,
+  orderDetails: orderDetailsReducer,
+
+  /// product //////
+  products: productsReducer,
+  productDetails: productDetailsReducer,
+  newReview: newReviewReducer,
+  newProduct: newProductReducer,
+  product: productReducer,
+  productReviews: productReviewsReducer,
+  review: reviewReducer,
 });
+
 
 let initialState = {
   cart: {

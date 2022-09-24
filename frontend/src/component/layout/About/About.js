@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutSection.css";
 import { Button, Typography, Avatar } from "@material-ui/core";
+import code from "../../../images/code.png"
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
 const About = () => {
@@ -18,15 +19,14 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res.cloudinary.com/tripleayt/image/upload/v1631555947/products/jpyibarlaxawvcvqjv5b.png"
-              alt="Founder"
+              src={code}  alt="Founder"
             />
-            <Typography>Abhishek Singh</Typography>
+            <Typography>ERIMO</Typography>
             <Button onClick={visitInstagram} color="primary">
               Visit Instagram
             </Button>
             <span>
-              This is a sample wesbite made by @erimo. Just  a sample of my work 
+              This is a sample wesbite made by @erimo. Just a sample of my work
             </span>
           </div>
           <div className="aboutSectionContainer2">
